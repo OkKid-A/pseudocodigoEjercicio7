@@ -1,0 +1,21 @@
+Proceso ParesImparesYCeros
+	pares <- 0
+	impares <- 0
+	ceros <- 0
+	Para i=0; hasta 15; i++
+		N <- aleatorio(0,36)
+		Si (N == 0) Entonces
+			ceros++
+		Sino
+			Si ((N % 2) == 0) Entonces
+				pares++
+			Sino
+				impares++
+			Fin Si
+		Fin Si
+	Fin Para
+	porPar <- (pares/15)x100
+	porImpar <- (impares/15)x100
+	porCeros <- (ceros/15)x100
+	Escribir "El porcentaje de números impares es ",porImpar,"% , de pares es ",porPar,"%, y el de ceroes es ",porCeros,"%"
+FinProceso
